@@ -1,0 +1,31 @@
+$font: 'Play', sans-serif;
+$font2: 'Alegreya Sans', sans-serif;
+$containerWidth: 915px;
+$black: #292929;
+$red: #E01F3D;
+
+$z-fixed-menu: 100;
+
+
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css);
+
+@import url(https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap);
+
+@import "./components/hero";
+@import "./components/layout";
+@import "./components/header";
+@import "./components/menu";
+@import "./components/features";
+@import "./components/feature";
+@import "./components/btn";
+@import "./components/section";
+@import "./components/headline";
+@import "./components/benefits";
+@import "./components/benefit";
+@import "./components/reviews";
+@import "./components/avatar";
+@import "./components/order";
+@import "./components/form";
+@import "./components/radio";
+@import "./components/fixed_menu";

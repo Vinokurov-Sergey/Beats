@@ -1,0 +1,39 @@
+.benefits__section {
+    position: relative;
+    &::before {
+        content: url(./img/Vector_2.svg);
+        position: absolute;
+        bottom: -17px;
+        left: 10%;
+    }
+}
+
+.benefits {
+    display: flex;
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 4%;
+    position: relative;
+
+    &:before {
+        content: url(./img/Combined_shape_2204.svg);
+        position: absolute;
+        top: 50px;
+        right: 0;
+        transform: translate(50%);
+    }
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+}

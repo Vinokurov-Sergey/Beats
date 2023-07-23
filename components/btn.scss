@@ -1,0 +1,28 @@
+.btn {
+    line-height: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 37px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+
+    &-red {
+        background: $red;
+        color: #FFFFFF;
+
+        &:hover {
+            background: #CA1B36;
+        }
+    }
+
+    &-transparent {
+        background: transparent;
+        color: #FFFFFF;
+        font-weight: normal;
+    }
+}
+
+.form__btns {
+    margin-top: 44px;
+}

@@ -1,0 +1,21 @@
+.btn {
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 18px 37px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+.btn-red {
+  background: #E01F3D;
+  color: #FFFFFF;
+}
+.btn-red:hover {
+  background: #CA1B36;
+}
+.btn-transparent {
+  background: transparent;
+  color: #FFFFFF;
+  font-weight: normal;
+}

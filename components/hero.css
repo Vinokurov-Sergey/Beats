@@ -1,0 +1,29 @@
+.hero {
+  background-color: #F5F5F5;
+  height: 100vh;
+  min-height: 652px;
+  color: #292929;
+}
+
+.hero__container {
+  background: url(./img/Ellipse_5.svg) right bottom 38%/53% auto no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 50px;
+  position: relative;
+}
+.hero__container:after {
+  position: absolute;
+  content: url(./img/Rectangle_14.svg);
+  bottom: -30px;
+  right: 2%;
+}

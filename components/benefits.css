@@ -1,0 +1,40 @@
+.benefits__section {
+  position: relative;
+}
+.benefits__section::before {
+  content: url(./img/Vector_2.svg);
+  position: absolute;
+  bottom: -17px;
+  left: 10%;
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefits__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 4%;
+  position: relative;
+}
+.benefits__item:before {
+  content: url(./img/Combined_shape_2204.svg);
+  position: absolute;
+  top: 50px;
+  right: 0;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+}
+.benefits__item:first-child {
+  padding-left: 0;
+}
+.benefits__item:last-child {
+  padding-right: 0;
+}
+.benefits__item:last-child::before {
+  display: none;
+}
