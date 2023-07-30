@@ -33,9 +33,9 @@
     width: 30px;
     height: 30px;
     fill: #B3B3B3;
-}
 
-.link-icon--active {
-    fill:black;
+    &:hover {
+        fill:black;
+    }
 }
 
