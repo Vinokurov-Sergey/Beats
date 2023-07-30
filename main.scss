@@ -1,12 +1,16 @@
 $font: 'Play', sans-serif;
 $font2: 'Alegreya Sans', sans-serif;
+$baseFontSize: 16px;
 $containerWidth: 915px;
 $black: #292929;
 $red: #E01F3D;
 
+$tablets: 768px;
+$phones: 480px;
+
 $z-fixed-menu: 100;
 
-
+@import "./components/media";
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css);
 
@@ -29,3 +33,7 @@ $z-fixed-menu: 100;
 @import "./components/form";
 @import "./components/radio";
 @import "./components/fixed_menu";
+@import "./components/hamburger";
+@import "./components/footer";
+@import "./components/contacts";
+@import "./components/socials";

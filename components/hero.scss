@@ -1,7 +1,7 @@
 .hero {
     background-color: #F5F5F5;
     height: 100vh;
-    min-height: 652px;
+    min-height: rem(652px);
     color: $black;
 
 }
@@ -12,33 +12,94 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 24px 0 50px;
+    padding: rem(24px) 0 rem(50px);
     position: relative;
+
     &:after {
         position: absolute;
         content: url(./img/Rectangle_14.svg);
-        bottom: -30px;
+        bottom: rem(-30px);
         right: 2%;
+    }
+
+    @include tablets {
+        background: none;
     }
 }
 
 .hero__title-section {
     width: 46%;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &::before {
+             content: "";
+            width: 323px;
+            height: 323px;
+            background: url(./img/Ellipse_5.svg) center center / contain no-repeat;
+            margin-bottom: rem(64px);
+
+        }
+    }
+
+    @include phones {
+
+        &::before {
+            content: "";
+            margin-bottom: rem(49px);
+        }
+    }
+}
+
+.hero__icons-section {
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .hero__main-title {
     text-transform: uppercase;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: rem(48px);
+    line-height: rem(52px);
     font-weight: bold;
-    margin-bottom: 22px;
+    margin-bottom: rem(22px);
+
+    @include tablets {
+        margin-bottom: rem(5px);
+        padding: 0 rem(15px);
+    }
+
+    @include phones {
+        font-size: rem(32px);
+        padding: 0 rem(28px);
+        line-height: rem(36px);
+        margin-bottom: rem(14px);
+    }
 }
 
 .hero__title-desc {
     font-family: $font2;
-    font-size: 21px;
-    line-height: 25px;
-    margin-bottom: 40px;
+    font-size: rem(21px);
+    line-height: rem(25px);
+    margin-bottom: rem(40px);
     padding-right: 20%;
+
+    @include tablets {
+        padding: 0 25%;
+        margin-bottom: rem(26px);
+    }
+
+    @include phones {
+        padding: 0 13%;
+        margin-bottom: rem(19px);
+    }
     
 }

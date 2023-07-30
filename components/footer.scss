@@ -1,0 +1,29 @@
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    height: rem(87px);
+
+    @include tablets {
+        height: rem(107px);
+    }
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        height: rem(151px);
+        justify-content: center;
+    }
+}
+
+.footer__tel-link {
+    @include tablets {
+        color: $red;
+    }
+
+    @include phones {
+        color: $black;
+        justify-content: center;
+        margin-bottom: rem(19px);
+        font-size: rem(16px);
+    }
+}

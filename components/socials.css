@@ -1,0 +1,39 @@
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid red;
+}
+
+.socials__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials__link {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.vk__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url(../img/vk.svg);
+}
+
+.footer__container {
+  border: 1px solid red;
+}
+
+.contacts {
+  border: 1px solid red;
+}

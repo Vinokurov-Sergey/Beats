@@ -1,3 +1,7 @@
+html {
+    font-size: $baseFontSize;
+}
+
 html, body {
     height: 100%;
 }
@@ -6,7 +10,6 @@ body {
     font-family: $font;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #666666;
@@ -27,6 +30,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
+    margin-bottom: 0;
     font-weight: normal;
 }
 
@@ -55,11 +59,11 @@ footer {
     overflow: hidden;
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 20px;
 }
 
 .container {
     margin: 0 auto;
-    width: 915px;
+    width: 95%;
+    max-width: $containerWidth;
     position: relative;
 }

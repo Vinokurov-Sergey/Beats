@@ -3,12 +3,17 @@
 }
 
 .feature__icon {
-    width: 41px;
-    height: 41px;
-    margin-right: 11px;
+    width: rem(41px);
+    height: rem(41px);
+    margin-right: rem(11px);
 }
 
 .feature__text {
-    line-height: 18px;
-    max-width: 114px;
+    line-height: rem(18px);
+    max-width: rem(114px);
+}
+
+.feature__icon-img {
+    width: 41px;
+    height: 41px;
 }

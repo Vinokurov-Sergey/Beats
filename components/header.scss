@@ -1,10 +1,18 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 24px;
+    align-items: flex-start;
+    margin-top: rem(24px);
 }
 
-.header__logo {
-    display: flex;
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.tel-link.header__tel-link {
+
+    @include tablets {
+        display: none;
+    }
 }

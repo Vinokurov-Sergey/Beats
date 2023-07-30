@@ -3,8 +3,16 @@
 }
 
 .order__title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: bold;
     color: #FFFFFF;
-    margin-bottom: 61px;
+    margin-bottom: rem(61px);
+
+    @include tablets {
+        margin-bottom: rem(32px);
+    }
+
+    @include phones {
+        font-size: rem(32px);
+    }
 }

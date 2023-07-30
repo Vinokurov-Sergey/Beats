@@ -3,40 +3,70 @@
     &::after {
         content: url(./img/Ellipse_7.svg);
         position: absolute;
-        bottom: -25px;
+        bottom: rem(-25px);
         left: 12%;
     }
 }
 
 .reviews__display {
     background: #F8FAF9;
-    padding: 42px 110px 42px 42px;
-    margin-bottom: 15px;
+    padding: rem(42px) rem(110px) rem(42px) rem(42px);
+    margin-bottom: rem(15px);
     overflow: hidden;
     position: relative;
 
     &:before {
         content: "";
         display: block;
-        width: 83px;
-        height: 83px;
+        width: rem(83px);
+        height: rem(83px);
         background: #FFFFFF;
         border-radius: 50%;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
-        top: -61px;
+        top: rem(-61px);
+
+        @include tablets {
+            top: rem(-48px);
+        }
+
+        @include phones {
+            display: none;
+        }
     }
+
+    @include tablets {
+        padding: rem(56px) 0 rem(46px) 0;
+        margin-bottom: rem(32px);
+    }
+
 }
 
 .reviews__display-inner {
     display: flex;
     align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .reviews__avatar {
-    width: 253px;
-    height: 264px;
+    width: rem(253px);
+    height: rem(264px);
+
+    @include tablets {
+        width: rem(130px);
+        height: rem(130px);
+        margin-bottom: rem(32px);
+    }
+
+    @include phones {
+        margin-bottom: rem(21px);
+    }
 }
 
 .reviews__avatar-img {
@@ -47,23 +77,32 @@
 
 .reviews__content {
     flex: 1;
-    margin-left: 40px;
+    margin-left: rem(40px);
+
+    @include tablets {
+        margin-left: 0;
+        padding: 0 rem(23px);
+    }
     
 }
 
 .reviews__title {
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: bold;
     color: $black;
-    margin-bottom: 27px;
+    margin-bottom: rem(27px);
+
+    @include tablets {
+        margin-bottom: rem(16px);
+    }
 }
 
 .reviews__text {
-    margin-bottom: 38px;
+    margin-bottom: rem(38px);
 }
 
 .reviews__author {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: bold;
     color: $black;
 }

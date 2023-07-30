@@ -3,13 +3,17 @@
     &::before {
         content: url(./img/Vector_2.svg);
         position: absolute;
-        bottom: -17px;
+        bottom: rem(-17px);
         left: 10%;
     }
 }
 
 .benefits {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits__item {
@@ -20,9 +24,13 @@
     &:before {
         content: url(./img/Combined_shape_2204.svg);
         position: absolute;
-        top: 50px;
+        top: rem(50px);
         right: 0;
         transform: translate(50%);
+
+        @include tablets {
+            display: none;
+        }
     }
 
     &:first-child {
@@ -35,5 +43,13 @@
         &::before {
             display: none;
         }
+    }
+
+    @include tablets {
+        padding: 0;
+    }
+
+    @include phones {
+        margin-bottom: rem(31px);
     }
 }
