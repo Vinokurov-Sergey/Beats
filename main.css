@@ -1098,7 +1098,6 @@ footer {
   height: 30px;
   fill: #B3B3B3;
 }
-
-.link-icon--active {
+.link-icon:hover {
   fill: black;
 }
