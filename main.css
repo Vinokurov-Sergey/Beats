@@ -1203,13 +1203,13 @@ footer {
 }
 .slider__section:after {
   position: absolute;
-  content: url(../img/Rectangle_13.svg);
+  content: url(./img/Rectangle_13.svg);
   bottom: -1.5625rem;
   right: 7%;
 }
 
 .slider_container {
-  background: url(../img/Slider_img.svg) left center no-repeat;
+  background: url(./img/Slider_img.svg) left center no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1357,7 +1357,7 @@ footer {
     content: "";
     width: 306px;
     height: 306px;
-    background: url(../img/Slider_img.svg) center/contain no-repeat;
+    background: url(./img/Slider_img.svg) center/contain no-repeat;
     margin-bottom: 2.5625rem;
   }
 }
