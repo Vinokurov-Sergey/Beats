@@ -15,6 +15,11 @@ body {
     color: #666666;
 }
 
+.body_noscroll {
+    height: 100%;
+    overflow: hidden;
+}
+
 * {
     box-sizing: border-box;
 }

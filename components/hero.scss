@@ -38,13 +38,14 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-
+        
         &::before {
              content: "";
             width: 323px;
             height: 323px;
             background: url(./img/Ellipse_5.svg) center center / contain no-repeat;
             margin-bottom: rem(64px);
+            
 
         }
     }

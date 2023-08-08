@@ -1,0 +1,14 @@
+.option__open {
+  display: none;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  opacity: 80%;
+  width: 273px;
+  position: absolute;
+  top: 0;
+}
+
+.option-img {
+  width: 91px;
+  height: 91px;
+}

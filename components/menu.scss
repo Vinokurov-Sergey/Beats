@@ -15,6 +15,7 @@
 .menu__item {
     margin-right: rem(27px);
     margin-top: rem(10px);
+
     &:last-child {
         margin-right: rem(0px);
     }
@@ -46,4 +47,83 @@
 
 .tel-link__text {
     white-space: nowrap;
+}
+
+.fullscreen-menu {
+
+    @include tablets {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: #333537;
+        overflow: hidden;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        display: none;
+
+        &.active {
+            display: flex;
+
+            & .menu__list-vertical {
+                display: flex;
+            }
+        }
+  
+        &__close {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: rem(42px);
+            right: rem(42px);
+
+            & .menu-close {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    @include phones {
+        align-items: center;
+    }
+}
+
+.menu-vertical {
+
+    .menu__list-vertical{
+        display: none;
+    }
+
+    @include tablets {
+        position: absolute;
+        top: rem(135px);
+        font-size: rem(36px);
+        color: #FFFFFF;
+        text-align: center;
+        display: flex;
+
+        & .menu__list {
+            flex-direction: column;
+        }
+
+        & .menu__item {
+            margin-right: 0;
+            margin-top: rem(29px);
+
+            & .menu__link {
+                font-size: rem(36px);
+            }
+
+        }
+        
+    }
+
+    @include phones {
+        position: relative;
+        top: 0;
+    }
 }
