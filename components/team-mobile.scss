@@ -1,0 +1,30 @@
+.team-mobile {
+    display: none;
+
+    @include tablets {
+        display: flex;
+        padding: 0 10%;
+        flex-direction: column;
+        align-items: center;
+
+        .team__item {
+            margin-bottom: rem(12px);
+        }
+
+        .team__title {
+            font-family: $font2;
+            font-size: 21px;
+        }
+
+        .team__title-arrow {
+            fill: #365A49;
+        }
+
+        .team__content-block-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: rem(10px);
+        }
+
+    }
+}

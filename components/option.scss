@@ -1,5 +1,5 @@
 .option {
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
     width: 91px;
     height: 91px;
     position: relative;
@@ -8,7 +8,7 @@
         opacity: 100%;
         position: absolute;
         top: 0;
-        right: -273px;
+        right: rem(-273px);
     }
 
     @include tablets {
@@ -20,21 +20,21 @@
     opacity: 0%;
     border-radius: 4px;
     background-color: #FFFFFF;
-    width: 273px;
+    width: rem(273px);
     position: absolute;
     top: 0;
-    right: -999px;
+    right: rem(-999px);
     transition: opacity .5s;
 }
 
 .option__list {
-    padding: 18px 14px;
+    padding: rem(18px) rem(14px);
 }
 
 .option__item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
+    margin-bottom: rem(8px);
     align-items: center;
 
     &:last-child {

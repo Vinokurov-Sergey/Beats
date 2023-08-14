@@ -1,6 +1,7 @@
 $font: 'Play', sans-serif;
 $font2: 'Alegreya Sans', sans-serif;
 $baseFontSize: 16px;
+// $containerWidth: 915px;
 $containerWidth: 915px;
 $black: #292929;
 $red: #E01F3D;
@@ -39,3 +40,6 @@ $z-fixed-menu: 100;
 @import "./components/socials";
 @import "./components/slider";
 @import "./components/option";
+@import "./components/team";
+@import "./components/team-mobile";
+@import "./components/modal";
