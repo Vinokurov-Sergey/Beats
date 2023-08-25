@@ -1,0 +1,22 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: rem(18px);
+    color: $black;
+}
+
+.contacts__desc {
+    @include tablets {
+        margin-top: rem(20px);
+        margin-bottom: rem(12px);
+        font-size: rem(21px);
+    }
+
+    @include phones {
+        font-size: rem(18px);
+        margin-bottom: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+}

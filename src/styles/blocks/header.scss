@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: rem(24px);
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.tel-link.header__tel-link {
+
+    @include tablets {
+        display: none;
+    }
+}
